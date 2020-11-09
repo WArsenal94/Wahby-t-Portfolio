@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+p {
+  color: black;
+  text-indent: 30px;
+  margin-left:5em
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left:10em;
+margin-right:10em;
+margin-top:4em;
+
+
+
+}
+
+
+.clearfix::after {
+    content: "";
+  display: block;
+  clear: both;
+  }
+
+/* Style the header */
+header {
+  margin-top: 60px;
+  background-color: #666;
+  padding: 30px;
+  font-size: 35px;
+  color: white;
+  height: 350px;
+}
+
+nav {
+  float: left;
+  padding: 20px;
+  width: 100%;
+  background-color: pink;
+  height: 100px; /* only for demonstration, should be removed */
+  font-size:20px;
+}
+
+article {
+  float: left;
+  width: 70%;
+  height: 900px;
+  background: #f1f1f1;
+  padding: 20px;
+  text-align: left;
+
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ aside {
+  float: left;
+  padding: 20px;
+  width: 30%;
+  background-color: #f1f1f1;
+  height: 900px; /* only for demonstration, should be removed */
+  text-align: left;
+
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  height: 400px;
+}
